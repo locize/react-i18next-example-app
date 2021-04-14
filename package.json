@@ -8,7 +8,9 @@
     "@testing-library/user-event": "^12.1.10",
     "i18next": "20.2.1",
     "i18next-browser-languagedetector": "6.1.0",
-    "i18next-http-backend": "1.2.1",
+    "i18next-locize-backend": "4.2.0",
+    "locize": "2.2.4",
+    "locize-lastused": "3.0.11",
     "luxon": "1.26.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -16,11 +18,15 @@
     "react-scripts": "4.0.3",
     "web-vitals": "^1.0.1"
   },
+  "devDependencies": {
+    "http-server": "0.12.3"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "serve": "http-server -s -p 5000 build"
   },
   "eslintConfig": {
     "extends": [

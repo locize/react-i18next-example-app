@@ -1,17 +1,21 @@
 import logo from './logo.svg';
 import './App.css';
 import { useTranslation, Trans } from 'react-i18next';
-import { useState, Suspense } from 'react';
+import { useState, Suspense, useEffect } from 'react';
 import Footer from './Footer'
-
-const lngs = {
-  en: { nativeName: 'English' },
-  de: { nativeName: 'Deutsch' }
-};
 
 function App() {
   const { t, i18n } = useTranslation();
   const [count, setCounter] = useState(0);
+
+  const [lngs, setLngs] = useState({ en: { nativeName: 'English' }});
+
+  useEffect(() => {
+    i18n.services.backendConnector.backend.getLanguages((err, ret) => {
+      if (err) return // TODO: handle err...
+      setLngs(ret);
+    });
+  }, []);
 
   return (
     <div className="App">
@@ -35,6 +39,7 @@ function App() {
             Edit <code>src/App.js</code> and save to reload.
           </Trans>
         </p>
+          {/* <div>{t('new.key', 'this will be added automatically')}</div> */}
         <a
           className="App-link"
           href="https://reactjs.org"
