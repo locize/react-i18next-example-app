@@ -1,5 +1,4 @@
-This is the example app used in a blog post.
-
+This is the example app used in [this blog post](https://blog.locize.com/2021-04-14-how-to-internationalize-react-i18next/).
 
 ---
 
