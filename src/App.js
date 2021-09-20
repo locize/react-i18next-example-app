@@ -23,7 +23,7 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <div>
           {Object.keys(lngs).map((lng) => (
-            <button key={lng} style={{ fontWeight: i18n.language === lng ? 'bold' : 'normal' }} type="submit" onClick={() => {
+            <button key={lng} style={{ fontWeight: i18n.resolvedLanguage === lng ? 'bold' : 'normal' }} type="submit" onClick={() => {
               i18n.changeLanguage(lng);
               setCounter(count + 1);
             }}>
