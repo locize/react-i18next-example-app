@@ -1,4 +1,4 @@
-This is the example app used in [this blog post](https://www.locize.com/blog/how-to-internationalize-react-i18next/).
+This is the example app used in [this blog post](https://www.locize.com/blog/react-i18next/).
 
 ---
 
