@@ -40,6 +40,8 @@ function App() {
           </Trans>
         </p>
           {/* <div>{t('new.key', 'this will be added automatically')}</div> */}
+          {/* <div>{t('new.keyWithContext', 'also this will be added automatically', 'and here some context')}</div> */}
+          {/* <div>{t('new.keyWithContextTwo', { defaultValue: 'default via options', tDescription: 'context via options' })}</div> */}
         <a
           className="App-link"
           href="https://reactjs.org"
