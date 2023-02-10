@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import { useTranslation, Trans } from 'react-i18next';
 import { useState, Suspense, useEffect } from 'react';
@@ -15,12 +14,12 @@ function App() {
       if (err) return // TODO: handle err...
       setLngs(ret);
     });
-  }, []);
+  }, [i18n]);
 
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <img src="logo.svg" className="App-logo" alt="logo" />
         <div>
           {Object.keys(lngs).map((lng) => (
             <button key={lng} style={{ fontWeight: i18n.resolvedLanguage === lng ? 'bold' : 'normal' }} type="submit" onClick={() => {
