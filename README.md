@@ -1,5 +1,9 @@
 This is the example app used in [this blog post](https://www.locize.com/blog/react-i18next/).
 
+
+A TypeScript version can be found [here](https://github.com/locize/react-i18next-example-app-ts).
+
+
 ---
 
 # Getting Started with Create React App
