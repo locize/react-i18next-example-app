@@ -3,20 +3,20 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@testing-library/jest-dom": "^5.16.5",
-    "@testing-library/react": "^14.0.0",
-    "@testing-library/user-event": "^14.4.3",
-    "i18next": "23.2.8",
-    "i18next-browser-languagedetector": "7.1.0",
-    "i18next-locize-backend": "6.2.2",
-    "locize": "2.4.6",
-    "locize-lastused": "3.2.1",
-    "luxon": "3.3.0",
+    "@testing-library/jest-dom": "^6.1.4",
+    "@testing-library/react": "^14.1.2",
+    "@testing-library/user-event": "^14.5.1",
+    "i18next": "23.7.6",
+    "i18next-browser-languagedetector": "7.2.0",
+    "i18next-locize-backend": "6.4.1",
+    "locize": "3.1.0",
+    "locize-lastused": "3.4.0",
+    "luxon": "3.4.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-i18next": "13.0.1",
+    "react-i18next": "13.5.0",
     "react-scripts": "5.0.1",
-    "web-vitals": "^3.3.2"
+    "web-vitals": "^3.5.0"
   },
   "devDependencies": {
     "http-server": "14.1.1"
